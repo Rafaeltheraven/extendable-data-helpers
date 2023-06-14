@@ -1,10 +1,10 @@
 [package]
-name = "extendable-enums-helpers"
+name = "extendable-data-helpers"
 license = "MIT"
 version = "0.1.1"
 edition = "2021"
-description = "Helper functions for extendable-enums because they can not be re-exported in a proc-macro package."
-repository = "https://github.com/Rafaeltheraven/extendable-enums-helpers"
+description = "Helper functions for extendable-data because they can not be re-exported in a proc-macro package."
+repository = "https://github.com/Rafaeltheraven/extendable-data-helpers"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -12,3 +12,6 @@ repository = "https://github.com/Rafaeltheraven/extendable-enums-helpers"
 syn = "2.0.18"
 quote = "1.0.28"
 proc-macro2 = "1.0.59"
+
+[dev-dependencies]
+syn = {features = ["extra-traits"]}
